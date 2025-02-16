@@ -29,12 +29,12 @@
             required
           />
         </label>
-    <br>
+        <br />
         <label>
           Email:
           <input type="email" name="email" placeholder="write your email" />
         </label>
-        <br>
+        <br />
         <label>
           Password:
           <input
@@ -43,22 +43,130 @@
             placeholder="write your password"
           />
         </label>
-        <br>
+        <br />
         <label>
           Url:
           <input type="url" name="url" />
         </label>
-        <br>
+        <br />
         <label>
           Phone:
           <input type="tel" name="phone-number" autocomplete value="+380" />
         </label>
-        <br>
+        <br />
         <label>
           Search:
           <input type="search" name="search-string" />
         </label>
       </fieldset>
+
+      <fieldset>
+        <legend>Number inputs</legend>
+
+        <label>
+          Quantity:
+          <input type="number" name="quantity" min="1" max="10" step="2" />
+        </label>
+        <br />
+        <label>
+          Volume:
+          <input type="range" name="volume" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Data inputs</legend>
+        <!-- min max step -->
+        <label>
+          <span>Date:</span>
+          <input type="date" name="date" />
+        </label>
+        <br />
+        <label>
+          <span>Datetime:</span>
+          <input type="datetime-local" name="datetime" />
+        </label>
+        <br />
+        <label>
+          <span>Time:</span>
+          <input type="time" name="time" />
+        </label>
+        <br />
+        <label>
+          <span>Month:</span>
+          <input type="month" name="month" />
+        </label>
+        <br />
+        <label>
+          <span>Week:</span>
+          <input type="week" name="week" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          File(s):
+          <input type="file" name="user-photo" multiple />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          Color:
+          <input type="color" name="color" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <input type="hidden" name="country" value="Ukraine" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <label>
+          Male
+          <input type="radio" value="male" name="gender" checked />
+        </label>
+        <label>
+          Female
+          <input type="radio" value="female" name="gender" />
+        </label>
+        <label>
+          Other
+          <input type="radio" value="other" name="gender" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Prefers</legend>
+    <label>
+        Pets:
+        <input type="checkbox" name="prefers" value="pets" checked>
+    </label>
+    <label>
+        Cars:
+        <input type="checkbox" name="prefers" value="cars">
+    </label>
+    <label>
+        Movies:
+        <input type="checkbox" name="prefers" value="movies">
+    </label>
+    </fieldset>
+
+      <fieldset>
+        <input id="new-button" type="button" value="btn" name="new-button" />
+      </fieldset>
+
+      <fieldset>
+        <input
+          id="image"
+          type="image"
+          name="send-image"
+          src="https://cdn-icons-png.flaticon.com/512/2343/2343641.png"
+          alt="send image"
+        />
+      </fieldset>
+
       <button type="reset">Reset</button>
       <button type="submit">Send</button>
     </form>
