@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./index.js"></script>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <!--<label for="first-name">Name:</label>
+      <input id="first-name" name="first-name" type="text" />-->
+
+      <fieldset>
+        <legend>String inputs</legend>
+        <label>
+          last-name:
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Write your last name"
+            pattern="^[A-Z][a-z]{1,20}$"
+            minlength="2"
+            maxlength="20"
+            value=""
+            autofocus
+            required
+          />
+        </label>
+    <br>
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="write your email" />
+        </label>
+        <br>
+        <label>
+          Password:
+          <input
+            type="password"
+            name="password"
+            placeholder="write your password"
+          />
+        </label>
+        <br>
+        <label>
+          Url:
+          <input type="url" name="url" />
+        </label>
+        <br>
+        <label>
+          Phone:
+          <input type="tel" name="phone-number" autocomplete value="+380" />
+        </label>
+        <br>
+        <label>
+          Search:
+          <input type="search" name="search-string" />
+        </label>
+      </fieldset>
+      <button type="reset">Reset</button>
+      <button type="submit">Send</button>
+    </form>
+  </body>
 </html>
